@@ -16,7 +16,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /var/www/django_null
+          cd /var/www/django_figma
           git pull
           systemctl restart django_figma.service
           systemctl reload nginx.service
